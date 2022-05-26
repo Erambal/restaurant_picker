@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport", initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Restaurant Picker</title>
+</head>
+<body>
+    <h1>Restaurant Picker</h1>
+    <p>Your next place to eat is:</p>
+    <p id="restaurant"></p>
+    <div id="button">Generate</div>
+
+    <h3>Add your own Restaurants!</h3>
+    <form action="/javascript/main.js">
+        <input name="addRestaurant" id="addRestaurant" type="text">
+        <input name="submit" id="submit" type="submit">
+    </form>
+
+    <h3>Upload your Restaurants</h3>
+    <h4>Download a template</h4>
+    <a href="https://docs.google.com/spreadsheets/d/1fYY3EkEF5M8bGRw7pqqAad8WksYdNQ_9_xhY86B21OA/edit?usp=sharing">here</a>
+    <input id="fileupload" type="file" name="fileupload" />
+    <button id="upload-button" onclick="uploadFile()"> Upload </button>
+    <script src="/javascript/main.js"></script>
+</body>
+</html>
